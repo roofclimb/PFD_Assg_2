@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>OCBC Video Chat</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" type="image/x-icon" href="images/ocbc.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fa fa-arrow-up"></i></span>
+    </div>
+    <header>
+        <a href="" class="logo"><img src="images/icon.jpg" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>&nbsp;Home</span></a></li>
+            <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
+            <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
+            <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
+            <!-- <li><a href="game.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a></li> -->
+        </ul>
+    </header>
+    <div class="gap">
+        <br><br><br><br>
+    </div>
+    <div id="gap1">
+        <br><br><br>
+    </div>
+    <div style="justify-content:center;display:flex;">
+        <div class="about-section" id="warning">
+            <h1><i class='bx bxs-error' style="color:red;"></i> Important Notice <i class='bx bxs-error' style="color:red;"></i></h1>
+            <p>Please be advised that the video stream function on our help service platform is designed with your security in mind.</p>
+            <p>We utilize industry-standard security measures to protect your privacy and safeguard your video stream.</p>
+            <p>However, it is important to remember that no online activity is completely without risk. </p>
+        </div>
+    </div>
+    <button class="button" id="join-btn">Join Stream</button>
+
+    <div id="stream-wrapper">
+        <div id="video-streams"></div>
+
+        <div id="stream-controls">
+            <button id="leave-btn">Leave Stream</button>
+            <button id="mic-btn">Mic On</button>
+            <button id="camera-btn">Camera on</button>
+        </div>
+    </div>
+</body>
+<script src="AgoraRTC_N-4.7.3.js"></script>
+<script src='main.js'></script>
+<script src="script.js"></script>
+</html>

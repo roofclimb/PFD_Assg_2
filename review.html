@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Enquiry/Feedback</title>
+    <link rel="icon" type="image/x-icon" href="images/ocbc.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">   
+</head>
+<script>
+    function OnSubmitForm(){
+        var x = document.getElementById("types").value;
+        console.log(x);
+        if(x=="Credit/Debit Cards"){
+            document.myform.action ="https://formsubmit.co/1eebbc838635cbd696a684cc4ecd5567";
+        }
+        else if(x=="Online Banking"){
+            document.myform.action ="https://formsubmit.co/64645dab9c11fe60b91cf429b9841368";
+        }
+        else if(x=="ATM"){
+            document.myform.action ="https://formsubmit.co/b095067bc8453efb69aac2480869c15c";
+        }
+        else{
+            document.myform.action ="https://formsubmit.co/b1a615cc1cc5e373a9f8492137bdcca2";
+        }
+        
+    }
+    
+</script>
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fa fa-arrow-up"></i></span>
+    </div>
+    <header>
+        <a href="" class="logo" ><img src="images/icon.jpg" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>&nbsp;Home</span></a></li>
+            <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
+            <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
+            <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
+            <!-- <li><a href="game.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a></li> -->
+        </ul>
+    </header>
+    <br><br><br><br>
+    
+    <h3 class="reviewtopic">Get In Touch</h3>
+    <div class="container">
+    <form name="myform" onsubmit="return OnSubmitForm();" method="POST">
+        
+        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+        <input type="email" name="Email" id="Email" placeholder="Email" required>
+        <select name="Subject" id="types" required>
+            <option selected disabled>Choose a subject</option>
+            <option value="Online Banking">Online Banking</option>
+            <option value="ATM">ATM</option>
+            <option value="Credit/Debit Cards">Credit/Debit Cards</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Others">Others</option>
+        </select>
+        <input type="text" id="message" name="Content" placeholder="How can we help you?">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://roofclimb.github.io/PFD_Assignment/thankyou.html">
+        <input type="hidden" name="_template" value="table">
+        <button type ="submit">Send</button>
+    </form>    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
