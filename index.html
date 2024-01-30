@@ -30,6 +30,8 @@
     </header>
    <!--  <br><br><br><br> -->
     <img src="images/man.jpg" class="man" alt="">
+    <div class="translate" id="google_translate_element"></div>
+
     <div class="about-section" id="homepage" >
         <h1 style="color:red" id="chatbotpagetitle">OCBChat</h1>
         <p id="chatbotpagetext">OCBChat is an all-in-one platform for OCBC</p>
@@ -54,6 +56,15 @@
     </div>
         
 </body>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: 'en' },
+          'google_translate_element'
+        );
+      }
+    </script>
 <script async type="text/javascript" src="https://userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/6c1e66a3140f49cfb00f316350ba8caeb5e9234e4d2d4efcbf3d6d2b31a02c04.js"></script>
 <script src="script.js"></script>
 </html>
