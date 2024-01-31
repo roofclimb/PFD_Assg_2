@@ -13,6 +13,32 @@ html{
     scroll-behavior: smooth;
 }
 
+.swiper-button-next{
+    background: url(images/rightarrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.swiper-button-next::after{
+    display: none;
+}
+
+
+.swiper-button-prev{
+    background: url(images/leftarrow.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    margin-right: 20px;
+}
+
+.swiper-button-prev::after{
+    display: none;
+}
+
+
 .fixed-con {
     z-index: 9724790009779558!important;
     background-color: #f7f8fc;
@@ -379,27 +405,57 @@ header i{
     display: none;
 }
 
-.container{
+.container1{
     position: relative;
     width: 100%;
-    min-height: 640px;
+    min-height: 780px;
     display: flex;
     align-items: center;
-    background:url(/images/home/white.png);
+    background: linear-gradient( rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(images/man.jpg);
+    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     overflow: hidden;
 }
 
-.container img{
-    width: 400px;
-    position: absolute;
-    top: 250px;
-    /* bottom: -500px; */
-    right:200px; 
+.container2{
+    position: relative;
+    width: 100%;
+    min-height: 780px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(images/faqbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
 }
 
+.container3{
+    position: relative;
+    width: 100%;
+    min-height: 780px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient( rgba(0,0,0,0.2)50%,rgba(0,0,0,0.2)50%), url(images/quizbackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color:white;
+}
+
+/* .container img{
+    width: 100%;
+    position: absolute;
+    top: 250px;
+    bottom: -500px;
+    right:200px; 
+}
+ */
 .home-text{
     padding: 0 150px;
     position: absolute;
@@ -445,30 +501,6 @@ header i{
     transition: 0.2s ease;
 }
 
-.swiper-button-next{
-    background: url(../images/home/rightarrow.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    margin-right: 20px;
-}
-
-.swiper-button-next::after{
-    display: none;
-}
-
-
-.swiper-button-prev{
-    background: url(../images/home/leftarrow.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    margin-right: 20px;
-}
-
-.swiper-button-prev::after{
-    display: none;
-}
 
 .heading{
     display: flex;
