@@ -97,7 +97,7 @@ html{
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
     background-color: #ddd;
-    padding: 20px;
+    padding:17px 65px;
 }
 
 /* Main column */
@@ -288,6 +288,7 @@ img{
     width: 100%;
 }
 
+
 body{
     color: var(--text-color)
 }
@@ -469,7 +470,7 @@ header i{
 }
 
 .home-text h1{
-    font-size: 2.4rem;
+    font-size: 30px;
     font-weight: 700;
     margin-bottom: 1rem;
 }
@@ -838,7 +839,7 @@ table{
   
 td{
     padding: 10px;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 table img{
@@ -1262,3 +1263,4 @@ h3{
     color:white;
     font-size: 50px;
 }
+
