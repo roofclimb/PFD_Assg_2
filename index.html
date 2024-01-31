@@ -26,7 +26,9 @@
           <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
           <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
           <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
-          <li><a href="game.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a></li>
+          <li>
+            <a href="quiz.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a>
+          </li>
       </ul>
       <div style="z-index: 5000;" class="translate" id="google_translate_element"></div>
   </header>
@@ -52,7 +54,7 @@
                 <div class="home-text">
                     <span>Fairprice</span>
                     <h1> Take a quiz to see <br> how much you know about OCBC<br>
-                      and receive a free shopping voucher.</h1>
+                      and receive a free Shopee voucher.</h1>
                     <a href="login.html" class="btn">Take Quiz<i class='bx bx-right-arrow-alt' ></i></a>
                 </div>
             </div>
@@ -69,12 +71,12 @@
           <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ocbcbank/video/7321666614997290242" data-video-id="7321666614997290242"> <section> <a target="_blank" title="@ocbcbank" href="https://www.tiktok.com/@ocbcbank?refer=embed">@ocbcbank</a> <p>Your financial personality traits can impact your financial health. Take our quiz to find out what is your financial persona. Link in bio!</p> <a target="_blank" title="♬ original sound  - OCBC" href="https://www.tiktok.com/music/original-sound-OCBC-7321666819877178113?refer=embed">♬ original sound  - OCBC</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
         </div>
       <div class="main">
-              <table>
+              <table style="border: solid black;">
                 <tr>
                   <td colspan="2" style="font-size: 15px;"><h2 style="text-align: center;">OCBC Digital App </h2></td>
                 </tr>
                   <tr>
-                      <td>
+                      <td style="align-items: center;">
                           <img src="images/paynow.jpg" alt="ocbc" class="image" style="height: 500px; width:auto">
                           &emsp;
                           <img src="images/paynow2.jpg" alt="ocbc" class="image"style="height: 500px; width:auto">
@@ -198,20 +200,12 @@
                       Answer: For new OCBC cards, activate them by calling the number on the activation sticker on the card. Alternatively, activate via Online Banking by going to Card Services > Activate New Card and entering card details. Lastly, you can activate in-person at any OCBC ATM or branch.<br><br>                                       
                     </td>                   
                 </tr>
-                  </table>
+              </table>
           </div>  
   </div>
-    <div w3-include-html="footer.html"></div>
-    <!-- Footer -->
-    <script>
-        const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-        const d=new Date();
-        let day = d.getDate();
-        let m=month[d.getMonth()];
-        let year = d.getFullYear();
-        document.getElementById("demo").innerHTML=day+" "+m+" "+year;
-        
-    </script>
+  <div class="copyright">
+    <p>Copyright © 2023 OCBChat. All rights reserved.</p>
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="javascript/include.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -223,7 +217,7 @@
             spaceBetween: 30,
             centeredSlides: true,
             autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
             },
             navigation: {

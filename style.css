@@ -406,6 +406,19 @@ header i{
     display: none;
 }
 
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    background:url(/images/home/white.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
 .container1{
     position: relative;
     width: 100%;
@@ -828,6 +841,7 @@ header i{
 }
 
 .copyright{
+    background-color: white;
     text-align: center;
     padding: 20px;
 }
@@ -839,7 +853,7 @@ table{
   
 td{
     padding: 10px;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 table img{
@@ -950,7 +964,7 @@ table img{
         font-size: 20px;
         color:white;
       }
-    
+
 @media(max-width:1080px){
     header{
         padding:18px 60px;
@@ -1002,9 +1016,8 @@ table img{
 }
 
 @media(max-width:991px){
-    .row{   
-        flex-direction: column;
-    }
+    
+    
     header{
         padding:18px 4%;
     }
@@ -1026,6 +1039,32 @@ table img{
 }
 
 @media(max-width:852px){
+    /* table{
+        text-align: center;
+        display: inline-block;
+        width:80%;
+    } */
+    table td,tr{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    tr{
+        width:100%;
+    }
+    td{
+        font-size: 10px;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    table img{
+        width:100%;
+    }
     header{
         padding:12px 4%;
     }
@@ -1075,6 +1114,18 @@ table img{
 }
 
 @media(max-width:712px){
+    .row{   
+        flex-direction: column;
+    }
+
+    /* .side { 
+        width:100%;
+    }
+
+    .main{
+        width: 100%;
+    } */
+   
     .container img{
         right:20px;
     }
@@ -1198,18 +1249,6 @@ table img{
     }
     .footer-box a img{
         width:50%;
-    }
-    table td,tr{
-        font-size: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width:auto;
-        padding: 20px;
-      }
-    table img{
-            width: 100%;
-            order:2;
     }
 }
 

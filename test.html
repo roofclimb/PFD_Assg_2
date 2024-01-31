@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width:100%;
+            min-height: 100vh;
+            display:flex;
+            flex-direction:column;
+            align-items: center;
+            padding-top: 30px;
+            background-color: #000;
+        }
+        #searchBox{
+            width: 90%;
+            height:50px;
+            border: 2px solid #fff;
+            display: flex;
+            flex-flow: row nowrap;
+            }
+        #input{
+            width: 80%;
+            border: none;
+            outline:none;
+            padding: 0 15px;
+        }
+        #searchBtn{
+            width: 20%; 
+        }
+        input{
+            font-size: 20;
+        }
+        #content{
+            width: 90%;
+            color:#fff;
+            font-size: 20px;
+            padding-top: 20px;
+            text-align: justify;
+
+        }
+        
+    </style>
+    <title>searchBox</title>
+    <div id="searchBox">
+    <input type="text" id="input" placeholder="Search" />
+    <input type="button" id="searchBtn" placeholder="Search" />
+    </div>
+     <div id="content">
+        <p id="p">
+            Hello i am priyanka gayyyyyy
+        </p>
+
+    </div>
+    <script type="text/javascript">
+        const p = document.getElementbyId("p");
+        const special = /[\\[{().+*?^$]/g;
+        function search() {
+            let input = document.getElementById("input").value;
+            if (input !==""){
+                if (special.test(input)) input =input.replace(special,"$&");
+                    let regExp = new RegExp(input,"gi");
+                    p.innerHTML =(p.textCntent).replace(regExp,"<mark>$&</mark>");
+                }    
+        }
+    </script>
+</body>
+</html>

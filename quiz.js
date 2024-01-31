@@ -5,10 +5,12 @@ const questionElement=document.getElementById('question')
 const answerButtonElement=document.getElementById('answer-buttons')
 
 let shuffledQuestions, currentQuestionIndex
-
+var score=0
+let qnno=1;
 startButton.addEventListener('click',startGame)
 nextButton.addEventListener('click',()=>{
     currentQuestionIndex++
+    qnno++
     setNextQuestion()
 })
 
@@ -55,9 +57,23 @@ function selectAnswer(e){
     Array.from(answerButtonElement.children).forEach(button => {
         setStatusClass(button,button.dataset.correct)
     })
+    if(document.body.classList.contains('correct')){
+        score+=1;
+        document.getElementById('text').innerHTML+="\n"+score+"/5";
+    }else{
+        document.getElementById('text').innerHTML+="\n"+score+"/5";
+    }
     if (shuffledQuestions.length>currentQuestionIndex+1){
         nextButton.classList.remove('hide')
     }else{
+        if(score!=5){
+            alert("Score: "+score+"/5\nTry again and get all the questions correct to receive a promo code.")
+        }
+        else{
+            var num = Math.floor(Math.random() * 90000) + 10000;
+            alert("Score: "+score+"/5\nHere is your promo code: "+num)
+        }
+        
         startButton.innerText='Restart'
         startButton.classList.remove('hide')
     }
@@ -92,48 +108,48 @@ function clearStatusClass(element){
 
 const questions=[
     {
-        question:'Which singer is from Singapore?',
+        question:'How can you reset your OCBC Online Banking PIN?',
         answers:[
-            {text:'JJ Lin',correct:true},
-            {text:'Jay Chou',correct:false},
-            {text:'Eric Chou',correct:false},
-            {text:'Mayday',correct:false},
+            {text:'Log in to OCBC Online Banking and go to Services > Reset PIN',correct:true},
+            {text:'Visit any OCBC branch',correct:false},
+            {text:'Call the customer service hotline',correct:false},
+            {text:'Send an email to info@ocbc.com',correct:false},
         ]
     },
     {
-        question:'Which celebrity is not from Singapore?',
+        question:'What should you do if you forgot your OCBC Online Banking username??',
         answers:[
-            {text:'Rebecca Lim',correct:false},
-            {text:'Zoe Tay',correct:false},
-            {text:'Liu Ling Ling',correct:false},
-            {text:'Donnie Yen',correct:true},
+            {text:'You cannot recover your username, you must register for a new one',correct:false},
+            {text:'Visit any OCBC branch to retrieve your username',correct:false},
+            {text:'Call the customer service hotline to reset it',correct:false},
+            {text:'Request for username reminder via online banking login page',correct:true},
         ]
     },
     {
-        question:'Which show was not produced in Singapore?',
+        question:'What is the maximum transfer limit for PayNow on OCBC Online Banking?',
         answers:[
-            {text:'A Quest to Heal',correct:false},
-            {text: 'With Love, Becks',correct:false},
-            {text: 'Healing Heros',correct:false},
-            {text: 'Ip Man',correct:true}
+            {text:'No maximum limit',correct:false},
+            {text: 'S$5,000 per day',correct:false},
+            {text: 'S$50,000 per transaction',correct:false},
+            {text: 'S$10,000 per day',correct:true}
         ]
     },
     {
-        question:'Which director is from Singapore?',
+        question:'How can you update your mobile number for SMS-OTP?',
         answers:[
-            {text:'Steven Spielberg',correct:false},
-            {text: 'John Ford',correct:false},
-            {text: 'Chen Kaige',correct:false},
-            {text: 'Jack Neo',correct:true}
+            {text:'Via online banking only',correct:false},
+            {text: 'Send an email to info@ocbc.com',correct:false},
+            {text: 'Through your the ocbc app',correct:false},
+            {text: 'Call customer service or visit branch',correct:true}
         ]
     },
     {
-        question:'Which movie was not produced in Singapore?',
+        question:'What is the maximum number of payees you can add for PayNow on OCBC?',
         answers:[
-            {text:'Ah Boys to Men',correct:false},
-            {text: 'Long long time ago',correct:false},
-            {text: 'Ilo ilo',correct:false},
-            {text: 'Crazy Rich Asians',correct:true}
+            {text:'50',correct:false},
+            {text: '20',correct:false},
+            {text: '100',correct:false},
+            {text: 'No limit',correct:true}
         ]
     }
 ]
