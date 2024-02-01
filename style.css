@@ -979,6 +979,10 @@ table img{
     .ocbcscamimage{
         height: 250px; width:auto;
     }
+
+    td p{
+        font-size: 16px; color:red; font-weight: 700;
+    }
 @media(max-width:1080px){
     header{
         padding:18px 60px;
@@ -1070,29 +1074,31 @@ table img{
         flex-wrap: wrap;
         padding: 0px;
     }
+    tr{
+        padding:5px;
+    }
+    .side{
+        padding: 10px;
+    }
+
+    .main{
+        padding: 0px;
+    }
 
 
     .onlinebankimage{
         height: auto; 
-        width:300px;
+        width:350px;
     }
     .onlinebankvid{
-        width:300px; height: 230px;
+        width:350px; height: 190px;
     }
 
     .atmimage{
-        height: auto; width: 300px;;}
+        height: auto; width: 300px;}
 
-    /* .instagram-media{
-        width: 400px;;
-    }
-
-    .tiktok-embed{
-        width:400px;
-    }
- */
     .ocbcscamimage{
-        height:auto;width: 300px;;
+        height:auto;width: 250px;
     }
     header{
         padding:12px 4%;
