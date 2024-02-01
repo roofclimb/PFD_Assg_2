@@ -11,6 +11,8 @@
     href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="script.js"></script>
+    
     
 </head>
 <body>
@@ -25,7 +27,7 @@
           <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>&nbsp;Home</span></a></li>
           <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
           <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
-          <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
+          <li onclick="myFunction()"><a href="#"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
           <li>
             <a href="quiz.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a>
           </li>
@@ -289,7 +291,6 @@
     <p>Copyright © 2023 OCBChat. All rights reserved.</p>
   </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
     <script>
           var swiper = new Swiper(".home", {
             spaceBetween: 30,
@@ -353,6 +354,18 @@
         }
         
         } 
+    </script>
+    <script>
+        function myFunction() {
+        let text;
+        let admin = prompt("Please enter password from agent:");
+        if(admin!="password"){
+            setTimeout(document.location.href = 'index.html', 0);
+        }
+        else{
+            setTimeout(document.location.href = 'video_chat.html', 0);
+        }
+        }
     </script>
 </body>
 </html>

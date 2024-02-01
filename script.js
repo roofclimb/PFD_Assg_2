@@ -18,10 +18,10 @@ function myFunction() {
   let admin = prompt("Please enter password from agent:");
   if(admin!="password"){
     setTimeout(document.location.href = 'index.html', 0);
-  }else{
-    text="No unauthorized access"
   }
-  document.getElementById('wrong').innerHTML=text;
+  else{
+    setTimeout(document.location.href = 'video_chat.html', 0);
+  }
 }
 // javascript from 6.59
 
