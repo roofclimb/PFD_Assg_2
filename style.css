@@ -846,6 +846,10 @@ header i{
     padding: 20px;
 }
 
+#datatable{
+    padding: 0px;
+}
+
 table{
     padding: 10px;
     width: 100%;
@@ -986,6 +990,17 @@ table img{
     td img{
         align-items: center;
     }
+
+    #myInput {
+        background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+        background-position: 10px 12px; /* Position the search icon */
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 100%; /* Full-width */
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-bottom: 12px; /* Add some space below the input */
+      }
 @media(max-width:1080px){
     header{
         padding:18px 60px;
@@ -1065,6 +1080,8 @@ table img{
         display: inline-block;
         width:80%;
     } */
+
+    
     table td,tr{
         font-size: 16px;
         display: flex;
