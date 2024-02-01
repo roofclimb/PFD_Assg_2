@@ -15,6 +15,7 @@ nextButton.addEventListener('click',()=>{
 })
 
 function startGame(){
+    score=0
     startButton.classList.add('hide')
     shuffledQuestions=questions.sort(()=>Math.random()-.5)
     currentQuestionIndex=0
@@ -66,12 +67,12 @@ function selectAnswer(e){
     if (shuffledQuestions.length>currentQuestionIndex+1){
         nextButton.classList.remove('hide')
     }else{
-        if(score!=5){
+        if(score<5){
             alert("Score: "+score+"/5\nTry again and get all the questions correct to receive a promo code.")
         }
         else{
             var num = Math.floor(Math.random() * 90000) + 10000;
-            alert("Score: "+score+"/5\nHere is your promo code: "+num)
+            alert("Score: "+score+"/5\nHere is your Shopee promo code: "+num)
         }
         
         startButton.innerText='Restart'

@@ -983,6 +983,9 @@ table img{
     td p{
         font-size: 16px; color:red; font-weight: 700;
     }
+    td img{
+        align-items: center;
+    }
 @media(max-width:1080px){
     header{
         padding:18px 60px;
@@ -1084,7 +1087,11 @@ table img{
     .main{
         padding: 0px;
     }
+    .container3 h1{
+        color:white;
+        background-color: black;
 
+    }
 
     .onlinebankimage{
         height: auto; 
