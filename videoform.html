@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Enquiry/Feedback</title>
+    <link rel="icon" type="image/x-icon" href="images/ocbc.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">   
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progress-value"><i class="fa fa-arrow-up"></i></span>
+    </div>
+    <header>
+        <a href="" class="logo" ><img src="images/icon.jpg" alt=""></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- Navigation bar -->
+        <ul class="navbar">
+            <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>&nbsp;Home</span></a></li>
+            <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
+            <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
+            <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
+            <li>
+              <a href="game.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a>
+            </li>
+        </ul>
+        <div style="z-index: 5000;" class="translate" id="google_translate_element"></div>
+    </header>
+    <br><br><br><br>
+    
+    <h3 class="reviewtopic">Video Chat</h3>
+    <div class="container">
+        <br><br>
+    <form name="myform" onsubmit="return OnSubmitForm()">
+        
+        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+        <input type="email" name="Email" id="Email" placeholder="Email" required>
+        <input type="text" name="AgentID" id="agentid" placeholder="AgentID" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+        <input type="submit">
+    </form>    
+    </div>
+    <script>
+        function redirect(){
+            window.location.href = 'video_chat.html';
+            alert("Authorized successfully");
+        }
+        function OnSubmitForm(){
+            let x=document.forms["myform"]["AgentID"].value;
+            let y=document.forms["myform"]["password"].value;
+
+            console.log(x);
+            
+            if(x=="123" || x=="321" && y=="password"){
+                redirect();
+            }
+        }
+
+
+    </script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        
+
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement(
+            { pageLanguage: 'en' },
+            'google_translate_element'
+          );
+        }
+        
+        
+    </script>
+</body>
+<script src="script.js"></script>
+
+</html>

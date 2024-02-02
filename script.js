@@ -13,16 +13,6 @@ window.onscroll=()=>{
   navbar.classList.remove('active');
 }
 
-function myFunction() {
-  let text;
-  let admin = prompt("Please enter password from agent:");
-  if(admin!="password"){
-    setTimeout(document.location.href = 'index.html', 0);
-  }
-  else{
-    setTimeout(document.location.href = 'video_chat.html', 0);
-  }
-}
 // javascript from 6.59
 
 /* const textarea = document.querySelector("textarea");

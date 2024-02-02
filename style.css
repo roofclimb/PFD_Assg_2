@@ -188,7 +188,7 @@ body{
 .reviewtopic{
     position: absolute;
     top:100px;
-    left:612px;
+    left:680px;
 }
 
 .topic{
@@ -412,7 +412,6 @@ header i{
     min-height: 640px;
     display: flex;
     align-items: center;
-    background:url(/images/home/white.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
