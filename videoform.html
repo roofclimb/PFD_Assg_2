@@ -24,7 +24,7 @@
             <li><a href="index.html"><i class="fa-sharp fa-solid fa-house"></i><span>&nbsp;Home</span></a></li>
             <li><a href="about.html"><i class="fa-solid fa-magnifying-glass"></i><span>&nbsp;About</span></a></li>
             <li><a href="review.html"><i class='bx bxs-heart'></i><span>&nbsp;Review</span></a></li>
-            <li><a href="video_chat.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
+            <li><a href="videoform.html"><i class='bx bxs-video'></i><span>&nbsp;Video Chat</span></a></li>
             <li>
               <a href="game.html"><i class="fa-solid fa-gamepad"></i><span>&nbsp;Games</span></a>
             </li>
@@ -33,10 +33,10 @@
     </header>
     <br><br><br><br>
     
-    <h3 class="reviewtopic">Video Chat</h3>
+    <h3 class="videotopic">Video Chat</h3>
     <div class="container">
         <br><br>
-    <form name="myform" onsubmit="return OnSubmitForm()">
+    <form name="myform" onsubmit="OnSubmitForm()">
         
         <input type="text" name="Name" id="name" placeholder="Your Name" required>
         <input type="email" name="Email" id="Email" placeholder="Email" required>
@@ -56,8 +56,11 @@
 
             console.log(x);
             
-            if(x=="123" || x=="321" && y=="password"){
-                redirect();
+            if(x=="123" || x=="321"){
+                if(y=="password"){
+                    redirect();
+
+                }
             }
         }
 

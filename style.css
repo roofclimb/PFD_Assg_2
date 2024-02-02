@@ -190,7 +190,11 @@ body{
     top:100px;
     left:680px;
 }
-
+.videotopic{
+    position: absolute;
+    top:100px;
+    left:705px;
+}
 .topic{
     position: absolute;
     top:100px;
