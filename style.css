@@ -111,6 +111,10 @@ body{
     background: linear-gradient( rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(images/singapore.webp);
     background-size: cover;
 }
+.videochat{
+    background: linear-gradient( rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(images/videochat.jpg);
+    background-size: cover;
+}
 .home{
     background: grey;
 }

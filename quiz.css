@@ -105,10 +105,12 @@ header{
 .navbar{
     display: flex;
     column-gap: 0.5rem;
+    
 }
 
+
 header a{
-    font-size:1rem;
+    font-size:20px;
     font-weight: 500;
     color:var(--text-color);
     padding: 0.5rem 1rem;
