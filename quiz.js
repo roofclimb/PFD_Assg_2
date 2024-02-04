@@ -118,7 +118,7 @@ const questions=[
         ]
     },
     {
-        question:'What should you do if you forgot your OCBC Online Banking username??',
+        question:'What should you do if you forgot your OCBC Online Banking username?',
         answers:[
             {text:'You cannot recover your username, you must register for a new one',correct:false},
             {text:'Visit any OCBC branch to retrieve your username',correct:false},
