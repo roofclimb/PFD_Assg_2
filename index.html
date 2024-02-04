@@ -249,7 +249,7 @@
                                              
                   </tr>
                   <tr>
-                  <td colspan="2" id="heading"><h2 style="text-align: center;">Card Security</h2></td>
+                  <td colspan="2" id="heading"><h2>Card Security</h2></td>
                   </tr>
                   <tr class="ocbchead">
                     <td>
@@ -363,11 +363,12 @@
             if(allhidden){
               
               mytr[i].parentElement.parentElement.style.display="none";
-              /* console.log(mytr[i].parentElement.parentElement.parentElement.firstChild.getElementsByTagName("h2")[0]); */
-
+              mytr[i].parentElement.parentElement.parentElement.getElementsByTagName("h2")[i].style.display="none";
             }
             else{
               mytr[i].parentElement.parentElement.style.display="";
+              mytr[i].parentElement.parentElement.parentElement.getElementsByTagName("h2")[i].style.display="";
+
             }
         }
       } 
